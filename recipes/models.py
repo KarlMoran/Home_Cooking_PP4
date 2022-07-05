@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+STATUS = ((0, "Draft"), (1, "Published"))
+
 
 class Post(models.Model):
     """
@@ -41,3 +43,14 @@ class Post(models.Model):
         return comment count
         """
         return self.comments.count()
+
+
+class Comments(models.Model):
+    """
+    Comments class
+    """
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='post_comments')  
+    name = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments_name')  
+    email = models.ForeignKey(User, on_delete=models.CASCADE, related_name='email_name')  
+    body = models.TextField()
+    created_on = models.DateField(auto_now_add=True)
