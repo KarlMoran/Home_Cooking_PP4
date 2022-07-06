@@ -11,8 +11,8 @@ class PostAdmin(SummernoteModelAdmin):
     summernote_fields = ('description', 'ingredients', ' preparation_steps')
 
 
-
 admin.site.register(Comments)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('name', 'body', 'post', 'created_on')
     search_fields = ('name', 'email', 'body')
+    
