@@ -8,3 +8,9 @@ class PostList(TemplateView):
     Home page view
     """
     template_name = 'base.html'
+
+class AllRecipes(TemplateView):
+    """
+    all_recipes view
+    """
+    template_name='all_recipes.html'
