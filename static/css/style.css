@@ -1,10 +1,10 @@
-/* font-family: 'Mulish', sans-serif;
-font-family: 'Oleo Script', cursive;
+/* font-family: 'Lobster Two', sans-serif;
+font-family: 'Shadows Into Light', cursive;
 font-family: 'Yanone Kaffeesatz', sans-serif; */
 
 body {
     background-color: #F9FAFC;
-    font-family:'Mulish', sans-serif;
+    font-family:'Lobster Two',sans-serif;
     font-weight: 500;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-brand{
-    font-size: 23px;
+    font-size: 27px;
     font-weight: 600;   
 }
 
@@ -49,7 +49,7 @@ i{
     font-size: 30px;
 } 
 
-/* HERO IMAGE */
+/* -- HERO IMAGE -- */
 
 .hero-image{
     background: url('../images/background-kitchen.jpg') no-repeat center center fixed;
@@ -73,8 +73,8 @@ i{
 }
 
 .title{
-    font-size: 45px;
-    font-family: 'Patrick Hand', sans-serif;
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .btn-home-page{
