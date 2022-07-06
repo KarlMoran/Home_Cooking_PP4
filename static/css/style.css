@@ -52,9 +52,33 @@ i{
 /* HERO IMAGE */
 
 .hero-image{
-    background: url('../images/background-kitchen.jpg') no-repeat top left fixed;
+    background: url('../images/background-kitchen.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* LOGIN/REGISTER BTN AND TITLE */
+
+.col-title{
+    padding: 40px 10px;
+    background-color: rgb(73 69 65 / 87%);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: #f6f2e6;
+}
+
+.title{
+    font-size: 45px;
+    font-family: 'Patrick Hand', sans-serif;
+}
+
+.btn-home-page{
+    padding: 10px;
 }
 
 /* 700px and up */
@@ -66,17 +90,8 @@ i{
     }
 
     .navbar{
-        padding: 1.5rem;
+        font-size: 1.2rem;
+        padding: 1rem;
     }
 
-    .navbar-brand{
-        font-size: 26px;
-        font-weight: 600;   
-    }
-
-
-    .hero-image{
-        background: url('../images/background-kitchen.jpg') no-repeat top center fixed;
-        background-size: cover;
-        height: 90vh;
-    }
+}
