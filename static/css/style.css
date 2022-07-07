@@ -82,6 +82,26 @@ i{
     margin-top: 15px;
 }
 
+/* ACCOUNTS PAGES */
+
+.accounts-image{
+    background: url('../images/Home_page.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.accounts-section-margin{
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+.form-style{
+    background-color: #c9edf0;
+    padding: 25px 10px;
+}
+
+
 /* LOGIN/REGISTER BTN AND TITLE */
 
 .col-title{
@@ -102,6 +122,9 @@ i{
     padding: 10px;
 }
 
+
+
+
 /* 700px and up */
 @media only screen and (min-width: 800px){
 
@@ -113,6 +136,30 @@ i{
     .navbar{
         font-size: 1.2rem;
         padding: 1rem;
+    }
+
+    .accounts-image{
+        background: url('../images/Home_page.jpg') no-repeat center center;
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+    }
+
+    .accounts-section-margin{
+        margin-top: 40px;
+    }
+
+    .image-padding{
+        padding-right: 0px;
+    }
+
+    .form-left-padding{
+        padding-left: 0;
+    }
+
+    .form-style{
+        padding: 25px 30px;
+        height: 450px;
     }
 
 }
