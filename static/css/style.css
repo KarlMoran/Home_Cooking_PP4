@@ -36,9 +36,10 @@ body {
     width: fit-content;
     }
 
-.form-control, .btn{
+.search-tab, .search-btn{
     border-radius: 25px;
 }
+
 
 /* -- FOOTER -- */
 
@@ -70,7 +71,11 @@ i{
 }
 
 .card{
-    max-width: 350px;
+    max-width: 275px;
+}
+
+.img-fit{
+    object-fit: cover;
 }
 
 .added-recipes-title{
