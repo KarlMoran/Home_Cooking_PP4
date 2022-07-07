@@ -12,7 +12,7 @@ body {
 /* -- NAVBAR -- */
 
 .navbar{
-    padding: 0.8rem;
+    padding: 1rem;
 }
 
 
@@ -62,10 +62,25 @@ i{
     position: relative;
 }
 
+/* Recently recipes card */
+
+.card-margin{
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.card{
+    max-width: 350px;
+}
+
+.added-recipes-title{
+    margin-top: 15px;
+}
+
 /* LOGIN/REGISTER BTN AND TITLE */
 
 .col-title{
-    padding: 40px 10px;
+    padding: 60px 10px;
     background-color: rgb(73 69 65 / 87%);
     margin-left: 10px;
     margin-right: 10px;
