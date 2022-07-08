@@ -8,12 +8,13 @@
                     <h1 class="text-center title"> Welcome to Home Cooking</h1>
                     <p class="display-6"> Perfect Home recipes for you to enjoy, quick and easy to make </p>
                     <hr>
-                    <a href="{% url 'login' %}"></a>
+                    <a href="#"></a>
                     <button class="btn btn-warning btn-home-page">Login/Register</button>
             </div>
         </div>
     </div>
 </section>
+<!-- Inspiration  RECIPES -->
 
 <section>
     <div class="text-center added-recipes-title">
@@ -24,11 +25,12 @@
     <div class="row">
         {% for post in posts %}
       <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+        <a href="{% url 'recipe_details' post.slug %}" class="text-decoration-none text-reset">
         <div class="card card-recently-added">
-            {% if "placeholder" in post.image.url %}
-                <img src="../static/images/board.jpg" alt="board image" class="card-img-top" height="200">
+          {% if "placeholder" in post.image.url %}
+                <img src="../static/images/board.jpg" alt="board" class="card-img-top img-fit" height="200">
             {% else %}
-                <img class="card-img-top" height="200px" src=" {{ post.image.url }}" alt="">
+                <img class="card-img-top img-fit" height="200px" src=" {{ post.image.url }}" alt="{{ post.title}}">
               {% endif %}
                 <div class="card-body">
                     <h5 class="card-title rec-card-title"></h5>
@@ -39,10 +41,11 @@
                 <div class="card-text text-muted">{{ post.published_on}} <i class="far fa-heart"></i></div>
             </div>
         </div>
-        </div>
-         {% endfor %}
+        </a>
+      </div>     
+      {% endfor %}
     </div>
-  </div>
+</div>
 
 </section>
 
