@@ -36,6 +36,7 @@ class AllRecipes(generic.ListView):
     template_name = 'all_recipes.html'
     paginate_by = 6
 
+
 class RecipeDetails(View):
     """ 
     Recipe details page 
