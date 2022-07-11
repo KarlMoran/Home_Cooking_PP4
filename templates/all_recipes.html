@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% load static %}
+
 <h1>All Recipes</h1>
 <div class="container">
     <div class="row">
@@ -15,10 +17,10 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 mt-3 left">
-            <div class="row">
+            <div class="row no-gutters">
                 {% for post in post_list %}
                 <div class="col-md-4">
-                    <div class="card border-0 mb-4" style="background-color: #f9f9f9;">
+                    <div class="card border-0 mb-4 all-recipes-cards">
                         <a href="{% url 'recipe_details' post.slug %}" class="text-decoration-none text-reset">
                             <div class="card-body">
                                 <div class="image-container">
@@ -39,7 +41,7 @@
                 </div>
             {% if forloop.counter|divisibleby:3 %}
             </div>
-            <div class="row">
+            <div class="row no-gutters">
             {% endif %}
             {% endfor %}
             </div>
