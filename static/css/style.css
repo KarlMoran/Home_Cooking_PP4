@@ -62,16 +62,10 @@ footer > p > i{
     align-items: center;
     position: relative;
 }
-
-/* -- Recently recipes card -- */
-
-.card-margin{
+ /* Inspiration ADDED RECIPES SECTION*/
+.card-recently-added{
     margin: 0 auto;
     margin-bottom: 30px;
-}
-
-.card{
-    max-width: 275px;
 }
 
 .img-fit{
@@ -190,4 +184,8 @@ footer > p > i{
         height: 450px;
     }
 
+}
+
+.rec-card-position {
+    margin: auto;
 }

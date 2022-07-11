@@ -103,7 +103,7 @@ def post(self, request, slug):
             "recipe_details.html",
             {
                 "post": post,
-                "comments": comments,
+                "comment": comments,
                 "liked": liked,
                 "comment_form": CommentForm()
             }
