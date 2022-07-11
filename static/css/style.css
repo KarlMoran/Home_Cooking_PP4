@@ -63,7 +63,7 @@ footer > p > i{
     position: relative;
 }
 
-/* Recently recipes card */
+/* -- Recently recipes card -- */
 
 .card-margin{
     margin: 0 auto;
@@ -82,7 +82,7 @@ footer > p > i{
     margin-top: 15px;
 }
 
-/* ACCOUNTS PAGES */
+/* -- ACCOUNTS PAGES -- */
 
 .accounts-image{
     background: url('../images/Home_page.jpg') no-repeat center center;
@@ -102,7 +102,7 @@ footer > p > i{
     height: 100%;
 }
 
-/* POST DETAILS PAGE */
+/* -- POST DETAILS PAGE--  */
 .recipe-card-head {
     background-color: rgb(2, 176, 176);
     height: 33vh;
@@ -125,7 +125,7 @@ footer > p > i{
 }
 
 
-/* LOGIN/REGISTER BTN AND TITLE */
+/* -- LOGIN/REGISTER BTN AND TITLE -- */
 
 .col-title{
     padding: 60px 10px;
@@ -145,7 +145,7 @@ footer > p > i{
     padding: 10px;
 }
 
-/* ALL RECIPES PAGE */
+/* -- ALL RECIPES PAGE -- */
 
 .all-recipes-cards{
     background-color: #f9f9f9;
@@ -153,7 +153,7 @@ footer > p > i{
 
 
 
-/* 700px and up */
+/* -- 700px and up -- */
 @media only screen and (min-width: 800px){
 
     body{

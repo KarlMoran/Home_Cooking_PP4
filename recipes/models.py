@@ -17,8 +17,7 @@ class Post(models.Model):
     description = models.TextField()
     preparation_steps = models.TextField()
     image = CloudinaryField('image', default='placeholder')
-    likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
-    comments = models.ManyToManyField(User, related_name='blog_comments', blank= True)  
+    likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)  
 
     class Meta:
         """
@@ -38,11 +37,6 @@ class Post(models.Model):
         """
         return self.likes.count()
 
-    def number_of_comments(self):
-        """
-        return comment count
-        """
-        return self.comments.count()
 
 
 class Comments(models.Model):
@@ -53,4 +47,4 @@ class Comments(models.Model):
     name = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments_name')  
     email = models.ForeignKey(User, on_delete=models.CASCADE, related_name='email_name')  
     body = models.TextField()
-    created_on = models.DateField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=True)

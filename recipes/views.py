@@ -1,8 +1,22 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from .models import Post
 from django.views import generic, View
+from django.http import HttpResponseRedirect
 
 
+
+class HomePage(View):
+    """
+    Home page view
+    view for last added recipes and most loved recipes sections
+    """
+    def get(self, request):
+        """ get request """
+        posts = Post.objects.order_by('-published_on')[:4]
+        context = {
+            "posts": posts,
+        }
+        return render(request, 'index.html', context)
 
 # Create your views here.
 class Register(View):
@@ -12,19 +26,21 @@ class Register(View):
     template_name='register.html'
 
 
-class PostList(View):
+class RecipeLike(View):
     """
     Home page view
     """
-    def get(self, request):
+    def post(self, request, slug):
         """
-        get request
+        like and unlike posts
         """
-        posts = Post.objects.order_by('-published_on')[:4]
-        context = {
-            "posts": posts,
-        }
-        return render(request, 'index.html', context)
+        post = get_object_or_404(Post, slug=slug)
+
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+        return HttpResponseRedirect(reverse('recipe_details', args=[slug]))
 
 
 class AllRecipes(generic.ListView):
@@ -42,7 +58,6 @@ class RecipeDetails(View):
     Recipe details page 
     """
     def get(self, request, slug):
-        """What happens for a GET request"""
         queryset = Post.objects.all()
         post = get_object_or_404(queryset, slug=slug)
         liked = False
@@ -54,6 +69,6 @@ class RecipeDetails(View):
             "recipe_details.html",
             {
                 "post": post,
-                "liked": liked,
-            }
+                "liked": liked
+            },
         )
