@@ -45,7 +45,7 @@ class Comments(models.Model):
     Comments class
     """
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='post_comments')  
-    name = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments_name')  
-    email = models.ForeignKey(User, on_delete=models.CASCADE, related_name='email_name')  
+    name = models.CharField(max_length=80)  
+    email = models.EmailField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
