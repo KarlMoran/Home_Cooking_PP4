@@ -4,7 +4,6 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 
 
-
 class HomePage(View):
     """
     Home page view
@@ -18,7 +17,7 @@ class HomePage(View):
         }
         return render(request, 'index.html', context)
 
-# Create your views here.
+
 class Register(View):
     """
     all_recipes view
@@ -60,6 +59,7 @@ class RecipeDetails(View):
     def get(self, request, slug):
         queryset = Post.objects.all()
         post = get_object_or_404(queryset, slug=slug)
+        # comments = post.comments_post_name.order_by('created_on')
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -69,6 +69,7 @@ class RecipeDetails(View):
             "recipe_details.html",
             {
                 "post": post,
-                "liked": liked
-            },
+                # "comment": comment,
+                "liked": liked,
+            }
         )
