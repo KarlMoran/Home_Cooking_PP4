@@ -102,6 +102,28 @@ footer > p > i{
     height: 100%;
 }
 
+/* POST DETAILS PAGE */
+.recipe-card-head {
+    background-color: rgb(2, 176, 176);
+    height: 33vh;
+}
+.recipe-card-head-img > img{
+    height: 33vh;
+}
+.recipe-title {
+    margin-left: 5%;
+    margin-top: 15px;
+}
+.recipe-subtitle {
+    margin-left: 5%;
+    margin-bottom: 0;
+    color: lightgray;
+}
+
+.recipes-content-body{
+    background-color: #f9f9f9;
+}
+
 
 /* LOGIN/REGISTER BTN AND TITLE */
 
