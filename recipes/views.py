@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404, reverse
 from .models import Post
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from .forms import CommentForm
+
 
 
 class HomePage(View):
@@ -59,7 +61,7 @@ class RecipeDetails(View):
     def get(self, request, slug):
         queryset = Post.objects.all()
         post = get_object_or_404(queryset, slug=slug)
-        # comments = post.comments_post_name.order_by('created_on')
+        comments = post.post_comments.order_by('created_on')
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -69,7 +71,8 @@ class RecipeDetails(View):
             "recipe_details.html",
             {
                 "post": post,
-                # "comment": comment,
+                "comment": comments,
                 "liked": liked,
+                "comment_form": CommentForm(),
             }
         )
