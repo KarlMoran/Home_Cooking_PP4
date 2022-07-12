@@ -3,6 +3,7 @@ from .models import Post, Comments
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .forms import CommentForm
+from django.views.generic import UpdateView
 
 
 
@@ -52,6 +53,14 @@ class AllRecipes(generic.ListView):
     queryset = Post.objects.order_by('-published_on')
     template_name = 'all_recipes.html'
     paginate_by = 6
+
+def delete_comment(request, comment_id):
+    """Deletes comment"""
+    comment = get_object_or_404(Comment, id=comment_id)
+    comment.delete()
+    return HttpResponseRedirect(reverse(
+        'recipe_details', args=[comment.post.slug]))
+
 
 
 class RecipeDetails(View):
