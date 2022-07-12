@@ -98,7 +98,7 @@ class RecipeDetails(View):
         )
     def post(self, request, slug):
         """
-        What happens for when a POST request
+        What happens when a POST like request
         """
         queryset = Post.objects.all()
         post = get_object_or_404(queryset, slug=slug)
