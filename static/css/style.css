@@ -17,11 +17,11 @@ body {
 
 
 .navbar-light .navbar-brand{
-    color: #2a2a2ada;
+    color: #ffff;
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color: rgba(0,0,0,.6);
+    color: rgb(255, 255, 255);
 }
 
 .navbar-brand{
