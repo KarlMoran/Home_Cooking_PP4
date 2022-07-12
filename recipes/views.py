@@ -2,8 +2,8 @@ from django.shortcuts import render, get_object_or_404, reverse
 from .models import Post, Comments
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .forms import CommentForm
-from django.views.generic import UpdateView
+from .forms import CommentForm, RecipeForm
+from django.views.generic import UpdateView, CreateView
 from django.contrib.auth.models import User
 from django.core.paginator import Paginator, EmptyPage
 
@@ -144,3 +144,17 @@ class YourRecipes(View):
         page_number = request.GET.get('page')
         page_obj = paginator.get_page(page_number)
         return render(request, 'your_recipes.html', {"page_obj": page_obj,})
+
+
+class AddRecipe(View):
+
+    def get(self, request):
+        """
+        What happens for a GET request
+        """
+        return render(request,
+            "add_recipe.html",
+            {
+                "recipe_form": RecipeForm()
+            }
+        )
