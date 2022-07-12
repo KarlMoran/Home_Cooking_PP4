@@ -4,6 +4,8 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .forms import CommentForm
 from django.views.generic import UpdateView
+from django.contrib.auth.models import User
+from django.core.paginator import Paginator, EmptyPage
 
 
 
@@ -129,3 +131,15 @@ class RecipeDetails(View):
                 "comment_form": CommentForm()
             }
         )
+
+
+def your_recipes(request):
+    """
+    your_recipes view
+    """
+    post = Post.objects.filter(author=request.user)
+
+    paginator = Paginator(post, 6) # Show 6 
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, 'your_recipes.html', {"page_obj": page_obj,})
