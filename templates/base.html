@@ -33,7 +33,7 @@
 <body>
 
 <!--NAVBAR-->
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(157, 119, 79);">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(2, 176, 176);">
     <a class="navbar-brand font-italic" href="{% url 'home' %}">Home Cooking</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -48,14 +48,41 @@
             <a class="nav-link" href="{% url 'all_recipes' %}">Recipes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login/Signup</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search Recipes" aria-label="Search">
-          <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
+            {% if user.is_authenticated %}
+            <a class="nav-link d-none" href="{% url 'account_logout'%}">Logout</a>
+            {% else %}
+            <a class="nav-link" href="{% url 'account_login'%}">Login/Register</a>
+            {% endif %}
+         </li>
+         <!--IF USER IS AUTHENTICATED-->
+         {% if user.is_authenticated %}
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hi {{ user.username }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="#">Favourite Recipes</a> 
+               <a class="dropdown-item" href="#">Your Recipes</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+            </div>
+         </li>
+         {% endif %}
+      </ul>
+      <form method="post" action="#" class="d-flex">
+         {% csrf_token %}
+         <input name="searched"
+            class="form-control search-tab"
+            type="text"
+            placeholder="Search Recipes"
+            aria-label="Search"
+            />
+         <button class="btn search-btn btn-warning border-right-0 border" type="submit">
+         <i class="fa fa-search"></i>
+         </button>
+      </form>
+   </div>
+</nav>
     </nav>
 
         {% block content %}
