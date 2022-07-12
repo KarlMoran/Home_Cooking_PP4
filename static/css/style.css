@@ -145,6 +145,11 @@ footer > p > i{
     background-color: #f9f9f9;
 }
 
+/* -- PAGINATION PAGE -- */
+
+.pagination{
+    display:block;
+}
 
 
 /* -- 700px and up -- */

@@ -133,13 +133,14 @@ class RecipeDetails(View):
         )
 
 
-def your_recipes(request):
-    """
-    your_recipes view
-    """
-    post = Post.objects.filter(author=request.user)
+class YourRecipes(View):
 
-    paginator = Paginator(post, 6) # Show 6 
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    return render(request, 'your_recipes.html', {"page_obj": page_obj,})
+    def get(self, request):
+        """
+        your_recipes view, get method
+        """
+        post = Post.objects.filter(author=request.user)
+        paginator = Paginator(post, 6)  # Show 6 per page
+        page_number = request.GET.get('page')
+        page_obj = paginator.get_page(page_number)
+        return render(request, 'your_recipes.html', {"page_obj": page_obj,})
