@@ -17,18 +17,18 @@
 <!-- Inspiration  RECIPES -->
 
 <section>
-    <div class="text-center added-recipes-title">
-<h2>Some Inspiration</h2>
+    <div class="text-center mt-5 mb-5 added-recipes-title">
+        <h3>Recently Added Recipes</h3>
 </div>
 
 <div class="container">
     <div class="row">
         {% for post in posts %}
-      <div class="col-sm-6 col-md-7 col-lg-3 col-xl-3 rec-card-position"">
+      <div class="col-sm-6 col-md-7 col-lg-3 col-xl-3 rec-card-position">
         <a href="{% url 'recipe_details' post.slug %}" class="text-decoration-none text-reset">
         <div class="card card-recently-added">
           {% if "placeholder" in post.image.url %}
-                <img src="../static/images/board.jpg" alt="board" class="card-img-top img-fit" height="200">
+                <img src="/static/images/board.jpg" alt="board" class="card-img-top img-fit" height="200">
             {% else %}
                 <img class="card-img-top img-fit" height="200px" src=" {{ post.image.url }}" alt="{{ post.title}}">
               {% endif %}
@@ -36,17 +36,17 @@
                     <h5 class="card-title rec-card-title"></h5>
                 <p class="card-text">{{ post.title }}</p>
                 <p class="card-text">By: {{ post.author }}</p>
-                <p class="card-text"> {{ post.description|safe|truncatechars:70 }}</p>
                 <hr>
-                <div class="card-text text-muted">{{ post.published_on}} <i class="far fa-heart"></i></div>
+                <div class="card-text text-muted">{{ post.published_on}} <i class="far fa-heart pl-3"></i>
+                    {{ post.number_of_likes }}</p>
+                 </div>
             </div>
         </div>
         </a>
       </div>     
       {% endfor %}
     </div>
-</div>
-
+  </div>
 </section>
 
 <section>
