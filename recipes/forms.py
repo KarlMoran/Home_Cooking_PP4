@@ -1,5 +1,6 @@
-from .models import Comments
-from django import forms 
+from django import forms
+from django_summernote.widgets import SummernoteWidget
+from .models import Comments, Post
 
 
 class CommentForm(forms.ModelForm):
@@ -12,3 +13,26 @@ class CommentForm(forms.ModelForm):
         self.fields[
             'body'
             ].label = ""
+
+class RecipeForm(forms.ModelForm):
+    """
+    Recipe Form 
+    """
+    class Meta:
+        """ 
+        fields for recipe form
+        """
+        model = Post
+        fields = ('title', 'description', 'ingredients',
+                  'preparation_steps', 'image')
+
+        widgets = {
+            'ingredients': SummernoteWidget(),
+            'preparation_steps': SummernoteWidget(),
+        }
+
+    def __init__(self, *args, **kwargs):
+        super(RecipeForm, self).__init__(*args, **kwargs)
+        self.fields[
+            'image'
+            ].label = "You can upload an image here"
