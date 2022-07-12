@@ -76,13 +76,13 @@ class RecipeDetails(View):
                 "comment_form": CommentForm(),
             }
         )
-
-
-def post(self, request, slug):
-        """What happens for a POST request"""
+    def post(self, request, slug):
+        """
+        What happens for when a POST request
+        """
         queryset = Post.objects.all()
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments_post_name.order_by('created_on')
+        comments = post.post_comments.order_by('created_on')
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -95,6 +95,7 @@ def post(self, request, slug):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
+            return HttpResponseRedirect(reverse('recipe_details', args=[slug]))
         else:
             comment_form = CommentForm()
 
