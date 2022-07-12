@@ -54,13 +54,24 @@ class AllRecipes(generic.ListView):
     template_name = 'all_recipes.html'
     paginate_by = 6
 
+
 def delete_comment(request, comment_id):
-    """Deletes comment"""
+    """
+    Deletes comment
+    """
     comment = get_object_or_404(Comment, id=comment_id)
     comment.delete()
     return HttpResponseRedirect(reverse(
         'recipe_details', args=[comment.post.slug]))
 
+
+class EditComment(UpdateView):
+    """ 
+    Edit Comments 
+    """
+    model = Comments
+    template_name = 'edit_comment.html'
+    form_class = CommentForm
 
 
 class RecipeDetails(View):
