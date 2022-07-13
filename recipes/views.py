@@ -62,7 +62,7 @@ def delete_comment(request, comment_id):
     """
     Deletes comment
     """
-    comment = get_object_or_404(Comment, id=comment_id)
+    comment = get_object_or_404(Comments, id=comment_id)
     comment.delete()
     return HttpResponseRedirect(reverse(
         'recipe_details', args=[comment.post.slug]))
@@ -179,6 +179,7 @@ class AddRecipe(View):
             },
         )
 
+
 class EditRecipe(UpdateView):
     """ 
     Edit Recipe 
@@ -186,6 +187,7 @@ class EditRecipe(UpdateView):
     model = Post
     template_name = 'edit_recipes.html'
     form_class = RecipeForm
+
 
 def delete_recipe(request, post_id):
     """
