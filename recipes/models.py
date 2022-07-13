@@ -37,6 +37,12 @@ class Post(models.Model):
         return likes count
         """
         return self.likes.count()
+    
+    def get_absolute_url(self):
+        """
+        Absolute URL
+        """
+        return reverse('your_recipes')
 
 
 
