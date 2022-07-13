@@ -11,4 +11,5 @@ urlpatterns = [
     path('edit_comment/<int:pk>', views.EditComment.as_view(), name='edit_comment'),
     path('your_recipes', views.YourRecipes.as_view(), name='your_recipes'),
     path('add_recipe', views.AddRecipe.as_view(), name='add_recipe'),
+    path('edit_recipes/<int:pk>', views.EditRecipe.as_view(), name='edit_recipes'),
 ]

@@ -178,3 +178,11 @@ class AddRecipe(View):
                  "recipe_form": recipe_form
             },
         )
+
+class EditRecipe(UpdateView):
+    """ 
+    Edit Recipe 
+    """
+    model = Post
+    template_name = 'edit_recipes.html'
+    form_class = RecipeForm
