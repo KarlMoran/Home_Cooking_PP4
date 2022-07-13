@@ -1,11 +1,12 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from .models import Post, Comments
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .forms import CommentForm, RecipeForm
 from django.views.generic import UpdateView, CreateView
 from django.contrib.auth.models import User
-from django.core.paginator import Paginator, EmptyPage
+from django.core.paginator import Paginator
+from django.utils.text import slugify
 
 
 
@@ -152,9 +153,28 @@ class AddRecipe(View):
         """
         What happens for a GET request
         """
-        return render(request,
+        return render(request, "add_recipe.html", {"recipe_form": RecipeForm()})
+
+    def post(self, request):
+        """
+        What happens for a POST request
+        """
+        recipe_form = RecipeForm(request.POST, request.FILES)
+
+        if recipe_form.is_valid():
+            recipe = recipe_form.save(commit=False)
+            recipe.author = request.user
+            recipe.slug = slugify('-'.join([recipe.title, str(recipe.author)]), allow_unicode=False)
+            recipe.save()
+            return redirect('your_recipes')
+        else:
+            # create message error 
+            recipe_form = RecipeForm()
+
+        return render(
+            request,
             "add_recipe.html",
             {
-                "recipe_form": RecipeForm()
-            }
+                 "recipe_form": recipe_form
+            },
         )
