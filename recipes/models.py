@@ -18,7 +18,6 @@ class Post(models.Model):
     preparation_steps = models.TextField()
     image = CloudinaryField('image', default='placeholder')
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
-  
 
     class Meta:
         """
