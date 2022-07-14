@@ -2,18 +2,17 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from .models import Post, Comments
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .forms import CommentForm, RecipeForm
-from django.views.generic import UpdateView, CreateView
+from .forms import CommentForm, RecipeForm 
+from django.views.generic import UpdateView
 from django.contrib.auth.models import User
 from django.core.paginator import Paginator
 from django.utils.text import slugify
 
 
-
 class HomePage(View):
     """
     Home page view
-    view for last added recipes and most loved recipes sections
+    view for Inspiration sections
     """
     def get(self, request):
         """ get request """
