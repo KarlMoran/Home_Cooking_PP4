@@ -196,3 +196,12 @@ def delete_recipe(request, post_id):
     post.delete()
     return redirect(reverse(
         'your_recipes'))
+
+class FavouriteRecipes(View):
+    def get(self, request):
+        """favourite_recipes view, get method"""
+        post = Post.objects.filter(likes=request.user.id)
+        paginator = Paginator(post, 6)
+        page_number = request.GET.get('page')
+        page_obj = paginator.get_page(page_number)
+        return render(request, 'favourite_recipes.html', {"page_obj": page_obj, })
