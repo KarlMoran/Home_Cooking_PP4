@@ -8,8 +8,15 @@
                     <h1 class="text-center title"> Welcome to Home Cooking</h1>
                     <p class="display-6"> Perfect Home recipes for you to enjoy, quick and easy to make </p>
                     <hr>
-                    <a href="#"></a>
-                    <button class="btn btn-warning btn-home-page">Login/Register</button>
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'account_logout' %}">
+                        <button class="btn btn-warning btn-home-page">Logout</button>
+                    </a>
+                    {% else %}
+                    <a href="{% url 'account_login' %}">
+                        <button class="btn btn-warning btn-home-page">Login/Register</button>
+                    </a>
+                    {% endif %}
             </div>
         </div>
     </div>
