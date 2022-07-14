@@ -197,6 +197,7 @@ def delete_recipe(request, post_id):
     return redirect(reverse(
         'your_recipes'))
 
+
 class FavouriteRecipes(View):
     def get(self, request):
         """favourite_recipes view, get method"""
