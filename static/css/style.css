@@ -51,6 +51,7 @@ footer > p > i{
     font-size: 30px;
 } 
 
+
 /* -- HERO IMAGE -- */
 
 .hero-image{
@@ -62,7 +63,9 @@ footer > p > i{
     align-items: center;
     position: relative;
 }
- /* Inspiration ADDED RECIPES SECTION*/
+
+
+/* -- Inspiration ADDED RECIPES SECTION -- */
 .card-recently-added{
     margin: 0 auto;
     margin-bottom: 30px;
@@ -75,6 +78,7 @@ footer > p > i{
 .added-recipes-title{
     margin-top: 15px;
 }
+
 
 /* -- ACCOUNTS PAGES -- */
 
@@ -95,6 +99,7 @@ footer > p > i{
     padding: 25px 10px;
     height: 100%;
 }
+
 
 /* -- POST DETAILS PAGE--  */
 .recipe-card-head {
@@ -120,7 +125,6 @@ footer > p > i{
 
 
 /* -- LOGIN/REGISTER BTN AND TITLE -- */
-
 .col-title{
     padding: 60px 10px;
     background-color: rgb(73 69 65 / 87%);
@@ -139,16 +143,34 @@ footer > p > i{
     padding: 10px;
 }
 
-/* -- ALL RECIPES PAGE -- */
 
+/* -- ALL RECIPES PAGE -- */
 .all-recipes-cards{
     background-color: #f9f9f9;
 }
 
-/* -- PAGINATION PAGE -- */
 
+/* -- PAGINATION PAGE -- */
 .pagination{
     display:block;
+}
+
+/* -- LOGIN PAGE -- */
+.login-register-bg{
+    background-color: rgb(2, 176, 176);
+}
+
+.login-img > img {
+    height: 60vh;
+    width: 100%;
+}
+
+#id_remember{
+    width: inherit;
+}
+
+.rec-card-position {
+    margin: auto;
 }
 
 
@@ -189,8 +211,9 @@ footer > p > i{
         height: 450px;
     }
 
-}
+    .login-img > img {
+        height: 50vh;
+        width: 100%;
+    }
 
-.rec-card-position {
-    margin: auto;
 }
