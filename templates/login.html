@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+<div class="row">
+  <div class="col-8 offset-2 text-center mt-5">
+      <h2>{% trans "Sign In" %}</h2>
+      <hr>
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+  <div class="row no-gutters mt-2 mb-5 login-register-bg">
+     <div class="col-sm-5 col-md-4 login-img">
+      <img  src="/static/images/spice.jpg" class="img-fit" alt="spice ingredients">
+     </div>
+     <div class="col-sm-7 col-md-8 p-4">
+      
+
+      
+      
+      <form class="login" method="POST" action="{% url 'account_login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button class="primaryAction btn btn-warning btn-login-register" type="submit">{% trans "Sign In" %}</button>
+      </form>
+
+      <p class="mt-4">{% blocktrans %}Need an account? Register
+        <a href="{{ signup_url }}" class="">here</a> first.{% endblocktrans %}</p>
+     </div>
+  </div>
+</div>
+
+
+{% endblock %}
