@@ -15,14 +15,12 @@
 </div>
 </div>
 
-
 <div class="container">
   <div class="row no-gutters mt-2 mb-5 login-register-bg">
      <div class="col-sm-5 col-md-4 login-img">
       <img  src="/static/images/spice.jpg" class="img-fit" alt="spice ingredients">
      </div>
      <div class="col-sm-7 col-md-8 p-4">
-      
       
       <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}

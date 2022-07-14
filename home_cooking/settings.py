@@ -62,6 +62,8 @@ LOGOUT_REDIRECT_URL = '/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # copy code from Django doc
+
 SUMMERNOTE_THEME = 'bs4'
 
 MESSAGE_TAGS = {
