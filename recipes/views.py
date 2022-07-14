@@ -93,7 +93,7 @@ class RecipeDetails(View):
             "recipe_details.html",
             {
                 "post": post,
-                "comment": comments,
+                "comments": comments,
                 "liked": liked,
                 "comment_form": CommentForm(),
             }
