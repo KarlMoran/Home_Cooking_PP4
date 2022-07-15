@@ -157,7 +157,7 @@ class YourRecipes(View):
         your_recipes view, get method
         """
         post = Post.objects.filter(author=request.user)
-        paginator = Paginator(post, 6)  # Show 6 per page
+        paginator = Paginator(post, 6)  
         page_number = request.GET.get('page')
         page_obj = paginator.get_page(page_number)
         return render(request, 'your_recipes.html', {"page_obj": page_obj,})
@@ -220,8 +220,8 @@ class FavouriteRecipes(View):
         """
         favourite_recipes view, get method
         """
-        post = Post.objects.filter(likes=request.user.id)
-        paginator = Paginator(post, 6)
-        page_obj = paginator.get_page(page_number)
+        post = Post.objects.filter(author=request.user.id)
+        paginator = Paginator(post, 6)  
         page_number = request.GET.get('page')
-        return render(request, 'favourite_recipes.html', {"page_obj": page_obj, })
+        page_obj = paginator.get_page(page_number)
+        return render(request, 'favourite_recipes.html', {"page_obj": page_obj,})
