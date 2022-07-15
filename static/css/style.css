@@ -114,7 +114,6 @@ footer {
 /* -- POST DETAILS PAGE--  */
 .recipe-card-head {
     background-color: rgb(2, 176, 176);
-    height: 33vh;
 }
 .recipe-card-head-img > img{
     height: 33vh;
