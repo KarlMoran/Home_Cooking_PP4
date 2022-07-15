@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <center>
+    {% if searched %}
+    <h1>
+        You Searched For {{ searched }}
+    </h1>
+    <br>
+    {% for post in posts %}
+    <a href="{% url 'recipe_details' post.slug %}">{{ post }} </a><br/>
+    {% endfor %}
+
+    {% else %}
+    <h1> Hey! You Forgot to Search For A Recipe...</h1>
+    {% endif %}
+   </center>
+{% endblock%}

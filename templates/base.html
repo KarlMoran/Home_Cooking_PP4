@@ -67,11 +67,11 @@
          </li>
          {% endif %}
       </ul>
-      <form method="post" action="#" class="d-flex">
+      <form method="post" action="{% url 'searchbar'%}" class="d-flex">
          {% csrf_token %}
          <input name="searched"
-            class="form-control search-tab"
-            type="text"
+            class="form-control search-tab me-2"
+            type="search"
             placeholder="Search Recipes"
             aria-label="Search"
             />

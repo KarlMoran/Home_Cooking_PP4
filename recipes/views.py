@@ -7,7 +7,7 @@ from django.views.generic import UpdateView
 from django.contrib.auth.models import User
 from django.core.paginator import Paginator
 from django.utils.text import slugify
-
+from django.views.generic.list import ListView
 
 class HomePage(View):
     """
@@ -21,6 +21,20 @@ class HomePage(View):
             "posts": posts,
         }
         return render(request, 'index.html', context)
+
+def searchbar(request):
+    """ 
+    Search bar view, template form youtube.
+    https://www.youtube.com/watch?v=AGtae4L5BbI
+    """
+    if request.method == "POST":
+        searched = request.POST['searched']
+        posts = Post.objects.filter(title__icontains=searched)
+        return render(request, 'searchbar.html',
+        {'searched': searched, 'posts': posts})
+    else:
+        return render(request, 'searchbar.html', {})
+
 
 
 class Register(View):
@@ -126,7 +140,7 @@ class RecipeDetails(View):
             "recipe_details.html",
             {
                 "post": post,
-                "comment": comments,
+                "comments": comments,
                 "liked": liked,
                 "comment_form": CommentForm()
             }

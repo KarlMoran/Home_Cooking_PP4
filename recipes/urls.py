@@ -14,4 +14,5 @@ urlpatterns = [
     path('edit_recipes/<int:pk>', views.EditRecipe.as_view(), name='edit_recipes'),
     path('delete_recipe/<int:post_id>', views.delete_recipe, name='delete_recipe'),
     path('favourite_recipes', views.FavouriteRecipes.as_view(), name='favourite_recipes'),
+    path('searchbar', views.searchbar, name='searchbar'),
 ]
