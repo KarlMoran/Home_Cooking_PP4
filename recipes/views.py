@@ -9,6 +9,7 @@ from django.core.paginator import Paginator
 from django.utils.text import slugify
 from django.views.generic.list import ListView
 
+
 class HomePage(View):
     """
     Home page view
@@ -19,10 +20,8 @@ class HomePage(View):
         Get request 
         """
         posts = Post.objects.order_by('-published_on')[:4]
-        liked_recipes = Post.objects.annotate(like_count=Count('likes')).order_by('-like_count')[:4]
         context = {
             "posts": posts,
-            "liked_recipes": liked_recipes,
         }
         return render(request, 'index.html', context)
 
