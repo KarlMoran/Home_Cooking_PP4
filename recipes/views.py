@@ -15,18 +15,23 @@ class HomePage(View):
     view for Inspiration sections
     """
     def get(self, request):
-        """ get request """
+        """ 
+        Get request 
+        """
         posts = Post.objects.order_by('-published_on')[:4]
+        liked_recipes = Post.objects.annotate(like_count=Count('likes')).order_by('-like_count')[:4]
         context = {
             "posts": posts,
+            "liked_recipes": liked_recipes,
         }
         return render(request, 'index.html', context)
+
 
 def searchbar(request):
     """ 
     Search bar view, template form youtube.
-    https://www.youtube.com/watch?v=AGtae4L5BbI
     """
+    # https://www.youtube.com/watch?v=AGtae4L5BbI
     if request.method == "POST":
         searched = request.POST['searched']
         posts = Post.objects.filter(title__icontains=searched)
@@ -36,17 +41,16 @@ def searchbar(request):
         return render(request, 'searchbar.html', {})
 
 
-
 class Register(View):
     """
-    all_recipes view
+    Register
     """
     template_name='register.html'
 
 
 class RecipeLike(View):
     """
-    Home page view
+    Recipe_likes
     """
     def post(self, request, slug):
         """
@@ -214,9 +218,11 @@ def delete_recipe(request, post_id):
 
 class FavouriteRecipes(View):
     def get(self, request):
-        """favourite_recipes view, get method"""
+        """
+        favourite_recipes view, get method
+        """
         post = Post.objects.filter(likes=request.user.id)
         paginator = Paginator(post, 6)
-        page_number = request.GET.get('page')
         page_obj = paginator.get_page(page_number)
+        page_number = request.GET.get('page')
         return render(request, 'favourite_recipes.html', {"page_obj": page_obj, })
