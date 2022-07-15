@@ -78,6 +78,7 @@ footer {
 
 
 /* -- Inspiration ADDED RECIPES SECTION -- */
+
 .card-recently-added{
     margin: 0 auto;
     margin-bottom: 30px;
@@ -89,6 +90,10 @@ footer {
 
 .added-recipes-title{
     margin-top: 15px;
+}
+
+.display-6 {
+    font-size: 20px;
 }
 
 
@@ -114,16 +119,20 @@ footer {
 
 
 /* -- POST DETAILS PAGE--  */
+
 .recipe-card-head {
     background-color: rgb(2, 176, 176);
 }
+
 .recipe-card-head-img > img{
     height: 33vh;
 }
+
 .recipe-title {
     margin-left: 5%;
     margin-top: 15px;
 }
+
 .recipe-subtitle {
     margin-left: 5%;
     margin-bottom: 0;
@@ -136,13 +145,14 @@ footer {
 
 
 /* -- LOGIN/REGISTER BTN AND TITLE -- */
+
 .col-title{
-    padding: 60px 10px;
-    background-color: rgb(73 69 65 / 87%);
+    padding: 50px 10px;
+    background-color: rgba(2, 176, 176, 0.5); */
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 5px;
-    color: #f6f2e6;
+    color: #ffff;
 }
 
 .title{
