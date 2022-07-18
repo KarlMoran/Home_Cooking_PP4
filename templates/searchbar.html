@@ -27,7 +27,7 @@
         <a href="{% url 'recipe_details' post.slug %}" class="text-decoration-none text-reset">
         <div class="card card-recently-added">
           {% if "placeholder" in post.image.url %}
-                <img src="/static/images/board.jpg" alt="board" class="card-img-top img-fit" height="200">
+                <img src="https://res.cloudinary.com/dwauw7cco/image/upload/v1658143593/board_efefl0.jpg" alt="board" class="card-img-top img-fit" height="200">
             {% else %}
                 <img class="card-img-top img-fit" height="200px" src=" {{ post.image.url }}" alt="{{ post.title}}">
               {% endif %}

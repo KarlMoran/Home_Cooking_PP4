@@ -5,7 +5,7 @@
 {% load static %}
 
 <section>
-    <div class="container-fluid hero-image">
+    <div class="container-fluid hero-image" style="background-image:url('https://res.cloudinary.com/dwauw7cco/image/upload/v1658142909/background-kitchen_zt6wpp.jpg')">
         <div class="row">
             <div class="col col-title text-center">
                     <h1 class="text-center title"> Welcome to Home Cooking</h1>
@@ -38,7 +38,7 @@
         <a href="{% url 'recipe_details' post.slug %}" class="text-decoration-none text-reset">
         <div class="card card-recently-added">
           {% if "placeholder" in post.image.url %}
-                <img src="/static/images/board.jpg" alt="board" class="card-img-top img-fit" height="200">
+                <img src="https://res.cloudinary.com/dwauw7cco/image/upload/v1655816448/cld-sample-4.jpg" alt="breakfast" class="card-img-top img-fit" height="200">
             {% else %}
                 <img class="card-img-top img-fit" height="200px" src=" {{ post.image.url }}" alt="{{ post.title}}">
               {% endif %}
