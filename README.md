@@ -6,7 +6,6 @@ This is a full-stack framework project built using Django, HTML, CSS and Python.
 
 The Home|Cooking page is a website where users can view recipes, like, Comment and and also share their own recipes with other users. This page is intended for any one who enjoys cooking and is looking for some inspiration.
 
-## UX
 
 ## User Storys 
 # Admin
@@ -36,3 +35,4 @@ The Home|Cooking page is a website where users can view recipes, like, Comment a
 - As a User I can see the most recent recipes so that i can keep up to date with the latest recipes.
 - As a user I can see the most loved recipes so that i can quickly find inspiration and see which recipes are most liked
 
+## Features 
