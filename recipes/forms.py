@@ -37,6 +37,7 @@ class RecipeForm(forms.ModelForm):
         widgets = {
             'ingredients': SummernoteWidget(),
             'preparation_steps': SummernoteWidget(),
+            'description': SummernoteWidget(),
         }
 
     def __init__(self, *args, **kwargs):
