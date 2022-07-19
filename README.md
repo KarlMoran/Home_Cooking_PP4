@@ -1,4 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<img width="162" alt="Screenshot 2022-07-19 at 12 03 56" src="https://user-images.githubusercontent.com/92300013/179736385-24b1ef1a-050b-4510-baf6-5b7462b00cc0.png">
 
 Welcome Karl Moran,
 

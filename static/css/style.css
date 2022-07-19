@@ -27,7 +27,7 @@ body {
 
 .navbar-brand{
     font-size: 27px;
-    font-weight: 600;   
+    font-weight: 600;
 }
 
 .navbar-nav > li > a:hover { 
@@ -48,7 +48,6 @@ body {
 
 
 /* -- FOOTER -- */
-
 footer {
     font-size: 30px;
 }
@@ -65,7 +64,6 @@ footer {
 
 
 /* -- HERO IMAGE -- */
-
 .hero-image{
     /* background: url('../images/background-kitchen.jpg') no-repeat center center fixed; */
     background-size: cover;
@@ -82,7 +80,6 @@ footer {
 
 
 /* -- Inspiration ADDED RECIPES SECTION -- */
-
 .card-recently-added{
     margin: 0 auto;
     margin-bottom: 30px;
@@ -102,9 +99,8 @@ footer {
 
 
 /* -- ACCOUNTS PAGES -- */
-
 .accounts-image{
-    background: url('../images/Home_page.jpg') no-repeat center center;
+    background: no-repeat center center;
     background-size: cover;
     height: 200px;
     width: 100%;
@@ -180,6 +176,7 @@ footer {
     display:block;
 }
 
+
 /* -- LOGIN / LOGOUT PAGE -- */
 .login-register-bg{
     background-color: rgb(2, 176, 176);
@@ -224,7 +221,7 @@ footer {
     }
 
     .accounts-image{
-        background: url('../images/Home_page.jpg') no-repeat center center;
+        background: no-repeat center center;
         background-size: cover;
         height: 450px;
         width: 100%;
