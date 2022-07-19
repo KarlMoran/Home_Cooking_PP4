@@ -4,10 +4,8 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .forms import CommentForm, RecipeForm 
 from django.views.generic import UpdateView
-from django.contrib.auth.models import User
 from django.core.paginator import Paginator
 from django.utils.text import slugify
-from django.views.generic.list import ListView
 
 
 class HomePage(View):
