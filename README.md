@@ -44,3 +44,9 @@ The Home|Cooking page is a website where users can view recipes, like, Comment a
 - A Message will appear when you have logged in. 
 
 <img width="1432" alt="Nav bar" src="https://user-images.githubusercontent.com/92300013/179953899-f76f03ae-fdb1-4a3b-b0db-8cdcd24988a9.png">
+
+- ### Hero Image
+- The hero image is welcoming and has a homnely feel to it. A message is displayed giving users an insight into the website. 
+- The Login / Register button will redirect user to the login page / Resgister page if user don't have a account. 
+
+<img width="1368" alt="Hero Image" src="https://user-images.githubusercontent.com/92300013/179966563-821f217c-2e79-49c1-9c58-bfb88b35bf2e.png">
