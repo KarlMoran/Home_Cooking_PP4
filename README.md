@@ -62,8 +62,13 @@ The Home|Cooking page is a website where users can view recipes, like, Comment a
 - Appears throughout the pages and contains social links.
 - Links are opened in a new tab, so they can easily revert back to Home|Cooking.
 
+<img width="1422" alt="Footer" src="https://user-images.githubusercontent.com/92300013/179976168-2e81d242-2175-421e-9e8d-c4d7b911f14e.png">
+
+
 - ## Recipe Page 
 - The Recipe pages shows all the Recipes avavilable, each recipe shows the craetor of the dish.
 - Starting with most recent to oldest recipes - The site will paginate all recipe cards to display 6 to a page.
 - Each Card shows a number of features from an image, name,  date posted and number of likes. 
 - Each recipe card takes users to the recipe details page
+
+<img width="1432" alt="All recipes" src="https://user-images.githubusercontent.com/92300013/179976467-c2bb6e42-e867-4a27-8874-2134af41e26f.png">
