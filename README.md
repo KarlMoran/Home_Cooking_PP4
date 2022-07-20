@@ -50,3 +50,20 @@ The Home|Cooking page is a website where users can view recipes, like, Comment a
 - The Login / Register button will redirect user to the login page / Resgister page if user don't have a account. 
 
 <img width="1368" alt="Hero Image" src="https://user-images.githubusercontent.com/92300013/179966563-821f217c-2e79-49c1-9c58-bfb88b35bf2e.png">
+
+- ### Inspiration Recipes
+- Inspiration Recipes shows the most recently Added recipe, if anyone needs a quick inspiration. 
+- This section showing 4 recipe cards is fully responsive.
+- Each recipe shows who craeted it with a number of other details. 
+
+<img width="1384" alt="Inspiration Recipes" src="https://user-images.githubusercontent.com/92300013/179969013-4f091d81-561b-4d6b-94ee-52daee1b9232.png">
+
+- ### Footer
+- Appears throughout the pages and contains social links.
+- Links are opened in a new tab, so they can easily revert back to Home|Cooking.
+
+- ## Recipe Page 
+- The Recipe pages shows all the Recipes avavilable, each recipe shows the craetor of the dish.
+- Starting with most recent to oldest recipes - The site will paginate all recipe cards to display 6 to a page.
+- Each Card shows a number of features from an image, name,  date posted and number of likes. 
+- Each recipe card takes users to the recipe details page
