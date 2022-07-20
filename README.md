@@ -92,3 +92,13 @@ The Home|Cooking page is a website where users can view recipes, like, Comment a
 #
 
 <img width="1398" alt="Sign-up Page" src="https://user-images.githubusercontent.com/92300013/179981039-b07670d4-6668-435c-9194-3b2720dd540a.png">
+
+#
+
+### Favorite Recipes Page
+- The Favorite Recipes page can only be viewed when the User is loggin, this page shows all recipes that the user liked 
+
+<img width="1430" alt="Favorite recipes" src="https://user-images.githubusercontent.com/92300013/179986649-24f0422e-e8a9-4be9-996c-b4589a37c661.png">
+
+#
+

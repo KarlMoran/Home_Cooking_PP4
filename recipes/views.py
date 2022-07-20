@@ -214,12 +214,16 @@ def delete_recipe(request, post_id):
 
 
 class FavouriteRecipes(View):
+    """ favourite recipes view"""
     def get(self, request):
-        """
-        favourite_recipes view, get method
-        """
-        post = Post.objects.filter(author=request.user.id)
-        paginator = Paginator(post, 6)  
-        page_number = request.GET.get('page')
-        page_obj = paginator.get_page(page_number)
-        return render(request, 'favourite_recipes.html', {"page_obj": page_obj,})
+        """favourite_recipes view, get method"""
+        if request.user.is_authenticated:
+            post = Post.objects.filter(likes=request.user.id)
+            
+            paginator = Paginator(post, 6)
+            page_number = request.GET.get('page')
+            page_obj = paginator.get_page(page_number)
+            return render(
+                request, 'favourite_recipes.html', {"page_obj": page_obj, })
+        else:
+            return render(request, 'favourite_recipes.html')
