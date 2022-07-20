@@ -148,12 +148,12 @@ footer {
 
 .col-title{
     padding: 50px 10px;
-    background-color: rgba(2, 176, 176, 0.5); */
+    background-color: rgba(2, 176, 176, 0.5); 
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 5px;
     color: #fff;
-    right: 20px;
+    right: 30px;
 }
 
 .title{
@@ -184,7 +184,7 @@ footer {
 }
 
 .login-img > img {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
 }
 
@@ -193,11 +193,6 @@ footer {
 }
 
 .logout-img > img {
-    height: 40vh;
-    width: 100%;
-}
-
-.signup-img > img {
     height: 50vh;
     width: 100%;
 }

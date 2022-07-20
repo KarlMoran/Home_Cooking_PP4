@@ -35,9 +35,11 @@ The Home|Cooking page is a website where users can view recipes, like, Comment a
 - As a User I can see the most recent recipes so that i can keep up to date with the latest recipes.
 - As a user I can see the most loved recipes so that i can quickly find inspiration and see which recipes are most liked
 
+#
+
 # Features 
 ## Home Page
-- ### Navigation Bar
+### Navigation Bar
 - This featured appears throughout the page,it allows users to easily navigate through the site.
 - The Navigation bar has a number of links for 'Home', 'Recipes' and 'Login/Register', more links appear when user is logged in. 
 - The Navigation bar alos includes a search bar, where users can search for recipes. 
@@ -45,30 +47,48 @@ The Home|Cooking page is a website where users can view recipes, like, Comment a
 
 <img width="1432" alt="Nav bar" src="https://user-images.githubusercontent.com/92300013/179953899-f76f03ae-fdb1-4a3b-b0db-8cdcd24988a9.png">
 
-- ### Hero Image
+#
+
+### Hero Image
 - The hero image is welcoming and has a homnely feel to it. A message is displayed giving users an insight into the website. 
 - The Login / Register button will redirect user to the login page / Resgister page if user don't have a account. 
 
 <img width="1368" alt="Hero Image" src="https://user-images.githubusercontent.com/92300013/179966563-821f217c-2e79-49c1-9c58-bfb88b35bf2e.png">
 
-- ### Inspiration Recipes
+#
+
+### Inspiration Recipes
 - Inspiration Recipes shows the most recently Added recipe, if anyone needs a quick inspiration. 
 - This section showing 4 recipe cards is fully responsive.
 - Each recipe shows who craeted it with a number of other details. 
 
 <img width="1384" alt="Inspiration Recipes" src="https://user-images.githubusercontent.com/92300013/179969013-4f091d81-561b-4d6b-94ee-52daee1b9232.png">
 
-- ### Footer
+#
+
+### Footer
 - Appears throughout the pages and contains social links.
 - Links are opened in a new tab, so they can easily revert back to Home|Cooking.
 
 <img width="1422" alt="Footer" src="https://user-images.githubusercontent.com/92300013/179976168-2e81d242-2175-421e-9e8d-c4d7b911f14e.png">
 
+#
 
-- ## Recipe Page 
+### Recipe Page 
 - The Recipe pages shows all the Recipes avavilable, each recipe shows the craetor of the dish.
 - Starting with most recent to oldest recipes - The site will paginate all recipe cards to display 6 to a page.
 - Each Card shows a number of features from an image, name,  date posted and number of likes. 
 - Each recipe card takes users to the recipe details page
 
 <img width="1432" alt="All recipes" src="https://user-images.githubusercontent.com/92300013/179976467-c2bb6e42-e867-4a27-8874-2134af41e26f.png">
+
+#
+
+### Login / Register
+- The login / Register buttons redirect Users to the login page where they can either signin or follow the link to the Register page where they can signup and create an account with use.
+
+<img width="1417" alt="Sign-in page" src="https://user-images.githubusercontent.com/92300013/179980101-40a6b7d9-7993-406b-bc68-2d40275f08bd.png">
+
+#
+
+<img width="1398" alt="Sign-up Page" src="https://user-images.githubusercontent.com/92300013/179981039-b07670d4-6668-435c-9194-3b2720dd540a.png">

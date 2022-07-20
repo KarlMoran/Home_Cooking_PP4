@@ -8,18 +8,18 @@
     <div class="container-fluid hero-image" style="background-image:url('https://res.cloudinary.com/dwauw7cco/image/upload/v1658230311/food-display_c7molu.jpg')">
         <div class="row">
             <div class="col col-title text-center">
-                    <h1 class="text-center title"> Welcome to Home Cooking</h1>
-                    <p class="display-6"> Find Your perfect recipes<br>With Home cook recipes brought from Home </p>
-                    <hr>
-                    {% if user.is_authenticated %}
-                    <a href="{% url 'account_logout' %}">
-                        <button class="btn btn-warning btn-home-page">Logout</button>
-                    </a>
-                    {% else %}
-                    <a href="{% url 'account_login' %}">
-                        <button class="btn btn-warning btn-home-page">Login/Register</button>
-                    </a>
-                    {% endif %}
+                <h1 class="text-center title"> Welcome to Home Cooking</h1>
+                <p class="display-6"> Find Your perfect recipes<br>With Home cooked recipes brought from Home </p>
+                <hr>
+                {% if user.is_authenticated %}
+                <a href="{% url 'account_logout' %}">
+                    <button class="btn btn-warning btn-home-page">Logout</button>
+                </a>
+                {% else %}
+                <a href="{% url 'account_login' %}">
+                    <button class="btn btn-warning btn-home-page">Login/Register</button>
+                </a>
+                {% endif %}
             </div>
         </div>
     </div>
