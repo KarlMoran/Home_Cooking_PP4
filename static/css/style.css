@@ -31,7 +31,7 @@ body {
 }
 
 .navbar-nav > li > a:hover { 
-    background-color:rgb(57, 170, 84);
+    background-color:#DBEB4F;
     padding: 5px;
     border-radius: 10px;
     width: fit-content;
@@ -53,7 +53,7 @@ footer {
 }
 
 .footer a {
-    color: rgb(2, 176, 176);
+    color: #DBEB4F;
 }
 
 .social-links {
