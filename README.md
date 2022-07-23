@@ -2,10 +2,14 @@
 
 This is a full-stack framework project built using Django, HTML, CSS and Python. My objective is to create a functioning and responsive website, that allows users to post, comment and like or unlike recipes. This project is based around the functionallity of CRUD - Create, Read, Update, Delete. 
 
+I wanted to build a Recipe page because I enjoy cooking and sharing recipes that I have created for my freinds and family. I wanted to create an simple platform for user to use. 
+Simple but effective 
+
 ## About 
 
-The Home|Cooking page is a website where users can view recipes, like, Comment and and also share their own recipes with other users. This page is intended for any one who enjoys cooking and is looking for some inspiration.
+The Home|Cooking page is a website where users can view recipes, like, Comment and and also share their own recipes with other users. This page is intended for any one who enjoys cooking and is looking for some inspiration. 
 
+#
 
 # User Storys 
 ## Admin
@@ -95,10 +99,27 @@ The Home|Cooking page is a website where users can view recipes, like, Comment a
 
 #
 
-### Favorite Recipes Page
-- The Favorite Recipes page can only be viewed when the User is loggin, this page shows all recipes that the user liked 
+### Favourite Recipes Page
+- The Favourite Recipes page can only be viewed when the User is loggin, this page shows all recipes that the user liked.
 
-<img width="1430" alt="Favorite recipes" src="https://user-images.githubusercontent.com/92300013/179986649-24f0422e-e8a9-4be9-996c-b4589a37c661.png">
+<img width="1429" alt="Favourite Recipe" src="https://user-images.githubusercontent.com/92300013/179989872-7beff406-3220-4c28-b0ea-2f8b8ecd2996.png">
 
 #
 
+### Your Recipes Page
+- This pages shows all recipes that the user has uploaded & created.
+- The user can Add recipe with a click of a button found at the top of page.
+- Recipes can be Edited and Deleted with a click of a button.
+
+<img width="1418" alt="Add Recipe" src="https://user-images.githubusercontent.com/92300013/180599153-a8056794-a158-465e-85a6-9ea002ad614d.png">
+
+#
+
+<img width="1429" alt="Edit/delete" src="https://user-images.githubusercontent.com/92300013/180599738-268be264-2ac8-46fb-96b9-07410ea0fc61.png">
+
+#
+
+## Bugs and Issues
+- Favourite_recipes wasn't showing up your favourite recipes, had the code in wrong and had to change it, needed to leave a space after a line. 
+- Had a problem with my comments, nothing was showing up. I need to capitalizes the C in Comments 
+- Issues with my cloudiary storage, needed to change to lowercase 

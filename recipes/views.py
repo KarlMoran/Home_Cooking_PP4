@@ -1,11 +1,11 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
-from .models import Post, Comments
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .forms import CommentForm, RecipeForm 
 from django.views.generic import UpdateView
 from django.core.paginator import Paginator
 from django.utils.text import slugify
+from .models import Post, Comments
+from .forms import CommentForm, RecipeForm 
 
 
 class HomePage(View):
@@ -42,7 +42,7 @@ class Register(View):
     """
     Register
     """
-    template_name='register.html'
+    template_name = 'register.html'
 
 
 class RecipeLike(View):
@@ -219,7 +219,7 @@ class FavouriteRecipes(View):
         """favourite_recipes view, get method"""
         if request.user.is_authenticated:
             post = Post.objects.filter(likes=request.user.id)
-            
+
             paginator = Paginator(post, 6)
             page_number = request.GET.get('page')
             page_obj = paginator.get_page(page_number)

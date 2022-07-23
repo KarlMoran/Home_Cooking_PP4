@@ -12,7 +12,8 @@ class Post(models.Model):
     """
     title = models.CharField(max_length=200, blank=False, null=False)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE,related_name='blog_posts')  
+    author = models.ForeignKey(User, on_delete=models.CASCADE,
+    related_name ='blog_posts')
     published_on = models.DateField(auto_now_add=True)
     ingredients = models.TextField()
     description = models.TextField()
@@ -37,7 +38,7 @@ class Post(models.Model):
         return likes count
         """
         return self.likes.count()
-    
+
     def get_absolute_url(self):
         """
         Absolute URL
@@ -50,8 +51,9 @@ class Comments(models.Model):
     """
     Comments class
     """
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='post_comments')  
-    name = models.CharField(max_length=80)  
+    post = models.ForeignKey(Post, on_delete=models.CASCADE,
+    related_name='post_comments')
+    name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
