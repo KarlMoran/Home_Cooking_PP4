@@ -111,11 +111,17 @@ The Home|Cooking page is a website where users can view recipes, like, Comment a
 - The user can Add recipe with a click of a button found at the top of page.
 - Recipes can be Edited and Deleted with a click of a button.
 
-<img width="1418" alt="Add Recipe" src="https://user-images.githubusercontent.com/92300013/180599153-a8056794-a158-465e-85a6-9ea002ad614d.png">
+<img width="1429" alt="Edit/delete" src="https://user-images.githubusercontent.com/92300013/180599738-268be264-2ac8-46fb-96b9-07410ea0fc61.png">
 
 #
 
-<img width="1429" alt="Edit/delete" src="https://user-images.githubusercontent.com/92300013/180599738-268be264-2ac8-46fb-96b9-07410ea0fc61.png">
+### Recipes Detail page 
+- The page shows all the infromation about the recipe and include  Recipes name, author name, date posted and image.
+- The body of the page contains short description of the recipe, ingredients and preparation steps
+- Number of likes and comments are displayed after the preparation steps
+- Only logged in users can leave a comment
+
+<img width="1424" alt="Recipe detail" src="https://user-images.githubusercontent.com/92300013/180602836-1eae18b0-a564-41c7-bfe8-3ac460e56613.png">
 
 #
 
