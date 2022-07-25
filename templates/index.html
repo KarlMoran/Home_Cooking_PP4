@@ -16,8 +16,8 @@
                     <button class="btn btn-warning btn-home-page">Logout</button>
                 </a>
                 {% else %}
-                <a href="{% url 'account_login' %}">
-                    <button class="btn btn-warning btn-home-page">Login/Register</button>
+                <a href="{% url 'account_login' %}"
+                    class="btn btn-warning btn-home-page">Login/Register
                 </a>
                 {% endif %}
             </div>

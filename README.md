@@ -9,6 +9,8 @@ Simple but effective
 
 The Home|Cooking page is a website where users can view recipes, like, Comment and and also share their own recipes with other users. This page is intended for any one who enjoys cooking and is looking for some inspiration. 
 
+Live link found here <a href="https://home-cooking1.herokuapp.com/" alt="Live Link"> Home|Cooking </a>
+
 #
 
 # User Storys 
@@ -124,6 +126,36 @@ The Home|Cooking page is a website where users can view recipes, like, Comment a
 <img width="1424" alt="Recipe detail" src="https://user-images.githubusercontent.com/92300013/180602836-1eae18b0-a564-41c7-bfe8-3ac460e56613.png">
 
 #
+
+### Add Recipes
+- Ounce the User is logged In, they can add recipes. 
+- A form must be filled out in order to publish recipes. 
+- All fields must be complated, a default image is provided. 
+
+<img width="1423" alt="Add recipe" src="https://user-images.githubusercontent.com/92300013/180754475-0995859f-583e-4056-b4a2-c8d7daab02d0.png">
+
+#
+
+## Design 
+- Color palette from <a href="https://coolors.co/" alt="Coolors">Coolors</a>
+
+![Recipe](https://user-images.githubusercontent.com/92300013/180755515-3b77621d-481b-4ecf-b06e-62d60822c818.png)
+
+#
+
+## Font
+- 'Shadows Into Light'
+- 'Yanone Kaffeesatz'
+
+#
+
+# Technologies Used
+
+## Languages
+- <a href="https://en.wikipedia.org/wiki/HTML5" alt="HTML5">HTML5</a>
+- <a href="https://en.wikipedia.org/wiki/CSS" alt="CSS3">CSS3</a>
+- <a href="https://www.python.org/" alt="Python">Python</a>
+
 
 ## Bugs and Issues
 - Favourite_recipes wasn't showing up your favourite recipes, had the code in wrong and had to change it, needed to leave a space after a line. 
