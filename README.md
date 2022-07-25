@@ -200,6 +200,8 @@ This was tested by creating a Superuser on the Django Admin Panel where the admi
 
 <img width="1294" alt="User Interaction" src="https://user-images.githubusercontent.com/92300013/180782553-66dc249f-6897-4c76-a215-63de8b455cef.png">
 
+<img width="537" alt="delete recipe" src="https://user-images.githubusercontent.com/92300013/180792748-0df6c023-1364-48ea-bc79-54cd5b5a5fac.png">
+
 ### User Recipes
    - As a Logged-in user I can post a recipes so that other users can see them.
    - As a logged-in user I can like and unlike recipes so that i can mark which recipes I like.
@@ -208,6 +210,8 @@ This was tested by creating a Superuser on the Django Admin Panel where the admi
 <img width="1425" alt="Add recipe" src="https://user-images.githubusercontent.com/92300013/180783433-6f2bbebf-5b04-4c65-b366-02158258a10e.png">
 
 <img width="295" alt="Add image" src="https://user-images.githubusercontent.com/92300013/180783713-88bc03f6-466f-4e94-911e-2dfb63e20e00.png"> <img width="94" alt="Liked recipe" src="https://user-images.githubusercontent.com/92300013/180783867-aa87e378-7449-4bc2-b45e-750ee923dc83.png">
+
+### Login / Register
 
 
 ## Bugs and Issues
