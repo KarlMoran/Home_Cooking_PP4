@@ -182,6 +182,12 @@ W3C CSS Validator - was used to validate CSS
 
 #
 
+# Wireframe
+
+[WIREFRAME](https://lucid.app/lucidspark/8713686c-4b42-4e8c-b6c8-45bee297a24e/edit?beaconFlowId=A68660C88A866270&invitationId=inv_107efb42-5399-4ede-8047-149768ab93a8#)
+
+#
+
 # Testing
 ## User Story 
 ### Admin
@@ -231,6 +237,9 @@ This was tested by creating a Superuser on the Django Admin Panel where the admi
 
 <img width="1347" alt="Navbar" src="https://user-images.githubusercontent.com/92300013/180800805-1e8c4f9b-2677-4d85-a1d8-d291b51ddad0.png">
 
+<img width="999" alt="Searched Prawns" src="https://user-images.githubusercontent.com/92300013/180803784-ce7ff54a-f78d-42d3-a7d7-a41933db3b1e.png">
+
+#
 
 ## Bugs and Issues
 - Favourite_recipes wasn't showing up your favourite recipes, had the code in wrong and had to change it, needed to leave a space after a line. 
