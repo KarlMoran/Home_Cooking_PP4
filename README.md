@@ -221,6 +221,16 @@ This was tested by creating a Superuser on the Django Admin Panel where the admi
 
 <img width="855" alt="SignUp" src="https://user-images.githubusercontent.com/92300013/180795155-d77e971a-c00b-4ace-b84f-d72bdd32e59c.png">
 
+<img width="569" alt="Login message" src="https://user-images.githubusercontent.com/92300013/180800244-2a0f57e2-d1dc-4376-af0b-4e1e04833ab0.png">
+
+### Navigation
+   - As a User I can easily navigate through the site so that i can view desired content.
+   - As a User I can search the desirable recipe by keyword so that i can find the recipe I want faster.
+   - As a User I can see the most recent recipes so that i can keep up to date with the latest recipes.
+   - As a user I can see the most loved recipes so that i can quickly find inspiration and see which recipes are most liked
+
+<img width="1347" alt="Navbar" src="https://user-images.githubusercontent.com/92300013/180800805-1e8c4f9b-2677-4d85-a1d8-d291b51ddad0.png">
+
 
 ## Bugs and Issues
 - Favourite_recipes wasn't showing up your favourite recipes, had the code in wrong and had to change it, needed to leave a space after a line. 
