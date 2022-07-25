@@ -31,12 +31,14 @@
             {% else %}
                 <img class="card-img-top img-fit" height="200px" src=" {{ post.image.url }}" alt="{{ post.title}}">
               {% endif %}
-         </div>
-            <h3 class="card-title">{{ post.title }}</h3>
-            <p class="text-muted">by {{ post.author }}</p>
-            <hr>
-            <div class="card-text text-muted">{{ post.published_on}} <i class="far fa-heart pl-3"></i>
-              {{ post.number_of_likes }}</p>
+                <div class="card-body">
+                    <h5 class="card-title rec-card-title"></h5>
+                <p class="card-text">{{ post.title }}</p>
+                <p class="card-text">By: {{ post.author }}</p>
+                <hr>
+                <div class="card-text text-muted">{{ post.published_on}} <i class="far fa-heart pl-3"></i>
+                    {{ post.number_of_likes }}</p>
+                 </div>
             </div>
         </div>
         </a>

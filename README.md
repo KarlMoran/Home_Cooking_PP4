@@ -212,6 +212,14 @@ This was tested by creating a Superuser on the Django Admin Panel where the admi
 <img width="295" alt="Add image" src="https://user-images.githubusercontent.com/92300013/180783713-88bc03f6-466f-4e94-911e-2dfb63e20e00.png"> <img width="94" alt="Liked recipe" src="https://user-images.githubusercontent.com/92300013/180783867-aa87e378-7449-4bc2-b45e-750ee923dc83.png">
 
 ### Login / Register
+   - As a User I can login/logout off my account if I wish so that i can connect or disconnect from the website.
+   - As a User I can register for an account so that i can interact with the site content.
+
+<img width="1188" alt="Signin" src="https://user-images.githubusercontent.com/92300013/180794843-c57d0d04-0e09-486b-9d23-bcf1d6c212ef.png">
+
+<img width="1184" alt="signout" src="https://user-images.githubusercontent.com/92300013/180794932-d3f6b5b8-4f28-4ec4-8599-256e9f061ce0.png">
+
+<img width="855" alt="SignUp" src="https://user-images.githubusercontent.com/92300013/180795155-d77e971a-c00b-4ace-b84f-d72bdd32e59c.png">
 
 
 ## Bugs and Issues
