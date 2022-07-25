@@ -136,7 +136,8 @@ Live link found here <a href="https://home-cooking1.herokuapp.com/" alt="Live Li
 
 #
 
-## Design 
+# Design 
+## Color
 - Color palette from <a href="https://coolors.co/" alt="Coolors">Coolors</a>
 
 ![Recipe](https://user-images.githubusercontent.com/92300013/180755515-3b77621d-481b-4ecf-b06e-62d60822c818.png)
@@ -156,12 +157,65 @@ Live link found here <a href="https://home-cooking1.herokuapp.com/" alt="Live Li
 - <a href="https://en.wikipedia.org/wiki/CSS" alt="CSS3">CSS3</a>
 - <a href="https://www.python.org/" alt="Python">Python</a>
 
+#
+
+## Frameworks, Libraries & Programs Used
+GitHub / GitPod - Holds the repository of my project, GitHub connects to GitPod.
+
+Heroku - Connected to the GitHub repository. 
+
+Django - used to build the models, forms and views of the app.
+
+Cloudinary - Used as free cloud storage for images uploaded to the site through the recipe forms
+
+Bootstrap - Used to quickly add design to my website. <a href="https://startbootstrap.com/theme/freelancer" alt="Freelancer"> (Freelancer)</a>
+
+Summernote - Used to add a text area field to the admin setup to enable a list of steps.
+
+Google Fonts - Used fonts for the website.
+
+Font Awesome - Used for icons.
+
+W3C Markup Validator - was used to validate HTML
+
+W3C CSS Validator - was used to validate CSS
+
+#
+
+# Testing
+## User Story 
+### Admin
+   - As a Site admin I can create, edit and delete recipes and comments so that i can manage the site content.
+   - As a Site admin I can log out of the admin panel so that i can disconnect from the website.
+   - As a Site admin I can access the admin panel so that i can manage recipes and comments.
+
+This was tested by creating a Superuser on the Django Admin Panel where the administrator can perform all the CRUD functionalitis.
+
+### User Interaction
+   - As a User I can delete my recipe so that i can remove any unwanted recipes that I have made.
+   - As a User I can edit recipes so that i can update any changes or mistakes to my recipes.
+   - As a User I can see all the recipes that I liked so that i can return to them.
+   - As a User I can view comments on recipes so that i can read other user's opinions.
+   - As a User I can view the number of likes on recipes so that i can see which recipe is most popular.
+
+<img width="1294" alt="User Interaction" src="https://user-images.githubusercontent.com/92300013/180782553-66dc249f-6897-4c76-a215-63de8b455cef.png">
+
+### User Recipes
+   - As a Logged-in user I can post a recipes so that other users can see them.
+   - As a logged-in user I can like and unlike recipes so that i can mark which recipes I like.
+   - As a Logged-in user I can upload an image along with my recipe so that i can other users can see what the dish looks like.
+
+<img width="1425" alt="Add recipe" src="https://user-images.githubusercontent.com/92300013/180783433-6f2bbebf-5b04-4c65-b366-02158258a10e.png">
+
+<img width="295" alt="Add image" src="https://user-images.githubusercontent.com/92300013/180783713-88bc03f6-466f-4e94-911e-2dfb63e20e00.png"> <img width="94" alt="Liked recipe" src="https://user-images.githubusercontent.com/92300013/180783867-aa87e378-7449-4bc2-b45e-750ee923dc83.png">
+
 
 ## Bugs and Issues
 - Favourite_recipes wasn't showing up your favourite recipes, had the code in wrong and had to change it, needed to leave a space after a line. 
 - Had a problem with my comments, nothing was showing up. I need to capitalizes the C in Comments 
 - Issues with my cloudiary storage, needed to change to lowercase 
 
+#
 
 # Deployment 
 
@@ -211,3 +265,12 @@ web: gunicorn project-name.wsgi
 - Log in to Heroku using the terminal heroku login -i.
 - Then run the following command: heroku git:remote -a your_app_name_here and replace your_app_name_here with the name of your Heroku app. This will link the app to your Gitpod terminal.
 - After linking your app to your workspace, you can then deploy new versions of the app by running the command git push heroku main and your app will be deployed to Heroku.
+
+#
+
+# Credits
+- <a href="https://codeinstitute.net/ie/">Code Institute</a> - The Project 'I think therefore I blog' helped me alot with setting up the page and gave me a template to work off
+- <a href="https://summernote.org/">Summernote</a> - I learn how to inport a summernote toolbar. 
+- <a href="https://www.djangoproject.com/">Django documentation</a> - also helped me other problems
+- <a href="https://www.youtube.com/watch?v=AGtae4L5BbI">Search bar</a> - This video on YouTube help me create a searchbar 
+- <a href="https://startbootstrap.com/theme/freelancer" alt="Freelancer"> Bootstrap </a> - A free template Freelancer

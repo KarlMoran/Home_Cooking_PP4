@@ -204,7 +204,7 @@ footer {
 
 
 /* -- 700px and up -- */
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 765px){
 
     body{
         margin-left: 2%;
@@ -245,11 +245,9 @@ footer {
         width: 100%;
     }
 
-}
-
-@media only screen and (max-width: 768px){
-
     .rec-card-position {
         margin: auto;
     }
+
 }
+
