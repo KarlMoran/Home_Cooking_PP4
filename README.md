@@ -6,13 +6,18 @@ I wanted to build a Recipe page because I enjoy cooking and sharing recipes that
 Simple but effective 
 
 It can be hardwork trying to plan out what your next recipe will be for dinner. This site make it easy for User to find inspiration with 
-Home cooked recipes at your finger tips :point_up: . Share with people, what family secrets recipe you may have out there. 
+Home cooked recipes at your finger tips :point_up:. Share with people, what family secrets recipe you may have out there. 
 
 ## About 
 
 The Home|Cooking page is a website where users can view recipes, like, Comment and and also share their own recipes with other users. This page is intended for any one who enjoys cooking and is looking for some inspiration. 
 
+
 Live link found here <a href="https://home-cooking1.herokuapp.com/" alt="Live Link"> Home|Cooking </a>
+
+#
+
+<img width="1082" alt="Screen" src="https://user-images.githubusercontent.com/92300013/181036010-8b638a9f-af99-4571-8888-480b3b2edf6c.png">
 
 #
 
@@ -251,6 +256,13 @@ This was tested by creating a Superuser on the Django Admin Panel where the admi
 <img width="1092" alt="Liked recipes" src="https://user-images.githubusercontent.com/92300013/180804810-21ef76bd-f42e-467e-9fe0-1e5959426cba.png">
 
 #
+
+##  Future Features
+- Down the lines you could start to add home made videos and tips on how to cook certian things. Giving User an insight on 
+how you cook certain recipes. Whats the best way to cook something or learn how to cook a new ingredient.
+
+#
+
 
 ## Bugs and Issues
 - Favourite_recipes wasn't showing up your favourite recipes, had the code in wrong and had to change it, needed to leave a space after a line. 
