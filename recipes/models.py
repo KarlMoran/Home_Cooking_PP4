@@ -5,6 +5,7 @@ from django.urls import reverse
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+# Django3blog
 
 class Post(models.Model):
     """

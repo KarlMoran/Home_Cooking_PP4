@@ -5,7 +5,7 @@ from django.views.generic import UpdateView
 from django.core.paginator import Paginator
 from django.utils.text import slugify
 from .models import Post, Comments
-from .forms import CommentForm, RecipeForm 
+from .forms import CommentForm, RecipeForm
 
 
 class HomePage(View):
@@ -15,7 +15,7 @@ class HomePage(View):
     """
     def get(self, request):
         """ 
-        Get request 
+        Get request
         """
         posts = Post.objects.order_by('-published_on')[:4]
         context = {
@@ -93,7 +93,7 @@ class EditComment(UpdateView):
 
 class RecipeDetails(View):
     """ 
-    Recipe details page 
+    Recipe details page
     """
     def get(self, request, slug):
         queryset = Post.objects.all()
@@ -155,7 +155,7 @@ class YourRecipes(View):
         your_recipes view, get method
         """
         post = Post.objects.filter(author=request.user)
-        paginator = Paginator(post, 6)  
+        paginator = Paginator(post, 6)
         page_number = request.GET.get('page')
         page_obj = paginator.get_page(page_number)
         return render(request, 'your_recipes.html', {"page_obj": page_obj,})
@@ -182,7 +182,7 @@ class AddRecipe(View):
             recipe.save()
             return redirect('your_recipes')
         else:
-            # create message error 
+            # create message error
             recipe_form = RecipeForm()
 
         return render(

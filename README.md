@@ -239,6 +239,8 @@ This was tested by creating a Superuser on the Django Admin Panel where the admi
 
 <img width="999" alt="Searched Prawns" src="https://user-images.githubusercontent.com/92300013/180803784-ce7ff54a-f78d-42d3-a7d7-a41933db3b1e.png">
 
+<img width="1092" alt="Liked recipes" src="https://user-images.githubusercontent.com/92300013/180804810-21ef76bd-f42e-467e-9fe0-1e5959426cba.png">
+
 #
 
 ## Bugs and Issues
