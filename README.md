@@ -5,6 +5,9 @@ This is a full-stack framework project built using Django, HTML, CSS and Python.
 I wanted to build a Recipe page because I enjoy cooking and sharing recipes that I have created for my freinds and family. I wanted to create an simple platform for user to use. 
 Simple but effective 
 
+It can be hardwork trying to plan out what your next recipe will be for dinner. This site make it easy for User to find inspiration with 
+Home cooked recipes at your finger tips :point_up: . Share with people, what family secrets recipe you may have out there. 
+
 ## About 
 
 The Home|Cooking page is a website where users can view recipes, like, Comment and and also share their own recipes with other users. This page is intended for any one who enjoys cooking and is looking for some inspiration. 
@@ -145,6 +148,7 @@ Live link found here <a href="https://home-cooking1.herokuapp.com/" alt="Live Li
 #
 
 ## Font
+- 'Lobster Two'
 - 'Shadows Into Light'
 - 'Yanone Kaffeesatz'
 
