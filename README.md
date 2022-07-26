@@ -188,6 +188,11 @@ W3C CSS Validator - was used to validate CSS
 
 #
 
+# Database schema 
+[DATABASE SCHEMA](https://lucid.app/lucidchart/cde07f32-52f8-43ef-b9cc-eddf47a621f7/edit?beaconFlowId=857755314F8C6DDA&invitationId=inv_21573bd0-7751-4a60-95fe-795c3b06be31&page=0_0#)
+
+
+
 # Testing
 ## User Story 
 ### Admin
