@@ -15,7 +15,7 @@ class HomePage(View):
     """
     def get(self, request):
         """ 
-        Get request
+        get request
         """
         posts = Post.objects.order_by('-published_on')[:4]
         context = {

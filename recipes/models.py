@@ -46,7 +46,7 @@ class Post(models.Model):
         """
         return reverse('your_recipes')
 
-
+# Django3blog
 
 class Comments(models.Model):
     """

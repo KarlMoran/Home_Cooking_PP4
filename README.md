@@ -25,26 +25,26 @@ Live link found here <a href="https://home-cooking1.herokuapp.com/" alt="Live Li
 ## Admin
 - As a Site admin I can create, edit and delete recipes and comments so that i can manage the site content.
 - As a Site admin I can log out of the admin panel so that i can disconnect from the website.
-- As a Site admin I can access the admin panel so that i can manage recipes and comments.
+- As a Site admin I can access the admin panel so that i can manage the page.
 
 ## Login/Register
-- As a User I can login/logout off my account if I wish so that i can connect or disconnect from the website.
-- As a User I can register for an account so that i can interact with the site content.
+- As a User I can login/logout off my account if I wish so that i can connect/disconnect from the website.
+- As a User I can register for an account so that i can interact with the website pages.
 
 ## User Recipes
 - As a Logged-in user I can post a recipes so that other users can see them.
-- As a logged-in user I can like and unlike recipes so that i can mark which recipes I like.
+- As a logged-in user I can like and unlike recipes so that i can share the love with recipes I like.
 - As a Logged-in user I can upload an image along with my recipe so that i can other users can see what the dish looks like.
+- As a Logged-In user I can see all the recipes that I liked so that i can return to them
 
 ## User Interaction
-- As a User I can delete my recipe so that i can remove any unwanted recipes that I have made.
-- As a User I can edit recipes so that i can update any changes or mistakes to my recipes.
-- As a User I can see all the recipes that I liked so that i can return to them.
-- As a User I can view comments on recipes so that i can read other user's opinions.
-- As a User I can view the number of likes on recipes so that i can see which recipe is most popular.
+- As a User I can delete my recipe so that i can remove any unwanted recipe.
+- As a User I can edit recipes so that i can update anything on the recipes.
+- As a User I can view comments on recipes so that i can see other user's thoughts on the recipe.
+- As a User I can view the number of likes on recipes so that i can see which recipe is most favourite
 
 ## Navigation
-- As a User I can easily navigate through the site so that i can view desired content.
+- As a User I can easily navigate through the site so that i can view content.
 - As a User I can search the desirable recipe by keyword so that i can find the recipe I want faster.
 - As a User I can see the most recent recipes so that i can keep up to date with the latest recipes.
 - As a user I can see the most loved recipes so that i can quickly find inspiration and see which recipes are most liked
@@ -207,16 +207,15 @@ W3C CSS Validator - was used to validate CSS
 ### Admin
    - As a Site admin I can create, edit and delete recipes and comments so that i can manage the site content.
    - As a Site admin I can log out of the admin panel so that i can disconnect from the website.
-   - As a Site admin I can access the admin panel so that i can manage recipes and comments.
+   - As a Site admin I can access the admin panel so that i can manage the page.
 
 This was tested by creating a Superuser on the Django Admin Panel where the administrator can perform all the CRUD functionalitis.
 
 ### User Interaction
-   - As a User I can delete my recipe so that i can remove any unwanted recipes that I have made.
-   - As a User I can edit recipes so that i can update any changes or mistakes to my recipes.
-   - As a User I can see all the recipes that I liked so that i can return to them.
-   - As a User I can view comments on recipes so that i can read other user's opinions.
-   - As a User I can view the number of likes on recipes so that i can see which recipe is most popular.
+   - As a User I can delete my recipe so that i can remove any unwanted recipe.
+   - As a User I can edit recipes so that i can update anything on the recipes.
+   - As a User I can view comments on recipes so that i can see other user's thoughts on the recipe.
+   - As a User I can view the number of likes on recipes so that i can see which recipe is most favourite.
 
 <img width="1294" alt="User Interaction" src="https://user-images.githubusercontent.com/92300013/180782553-66dc249f-6897-4c76-a215-63de8b455cef.png">
 
@@ -224,16 +223,17 @@ This was tested by creating a Superuser on the Django Admin Panel where the admi
 
 ### User Recipes
    - As a Logged-in user I can post a recipes so that other users can see them.
-   - As a logged-in user I can like and unlike recipes so that i can mark which recipes I like.
-   - As a Logged-in user I can upload an image along with my recipe so that i can other users can see what the dish looks like.
+   - As a logged-in user I can like and unlike recipes so that i can share the love with recipes I like
+   - As a Logged-in user I can upload an image along with my recipe so that i can let users see what the dish looks like
+   - As a Logged-In user I can see all the recipes that I liked so that i can return to them
 
 <img width="1425" alt="Add recipe" src="https://user-images.githubusercontent.com/92300013/180783433-6f2bbebf-5b04-4c65-b366-02158258a10e.png">
 
 <img width="295" alt="Add image" src="https://user-images.githubusercontent.com/92300013/180783713-88bc03f6-466f-4e94-911e-2dfb63e20e00.png"> <img width="94" alt="Liked recipe" src="https://user-images.githubusercontent.com/92300013/180783867-aa87e378-7449-4bc2-b45e-750ee923dc83.png">
 
 ### Login / Register
-   - As a User I can login/logout off my account if I wish so that i can connect or disconnect from the website.
-   - As a User I can register for an account so that i can interact with the site content.
+   - As a User I can login/logout off my account if I wish so that i can connect/disconnect from the website
+   - As a User I can register for an account so that i can interact with the website pages
 
 <img width="1188" alt="Signin" src="https://user-images.githubusercontent.com/92300013/180794843-c57d0d04-0e09-486b-9d23-bcf1d6c212ef.png">
 
@@ -244,8 +244,8 @@ This was tested by creating a Superuser on the Django Admin Panel where the admi
 <img width="569" alt="Login message" src="https://user-images.githubusercontent.com/92300013/180800244-2a0f57e2-d1dc-4376-af0b-4e1e04833ab0.png">
 
 ### Navigation
-   - As a User I can easily navigate through the site so that i can view desired content.
-   - As a User I can search the desirable recipe by keyword so that i can find the recipe I want faster.
+   - As a User I can easily navigate through the site so that i can view content.
+   - As a User I can search the recipe by keyword so that i can find the recipe I want faster
    - As a User I can see the most recent recipes so that i can keep up to date with the latest recipes.
    - As a user I can see the most loved recipes so that i can quickly find inspiration and see which recipes are most liked
 
@@ -262,7 +262,6 @@ This was tested by creating a Superuser on the Django Admin Panel where the admi
 how you cook certain recipes. Whats the best way to cook something or learn how to cook a new ingredient.
 
 #
-
 
 ## Bugs and Issues
 - Favourite_recipes wasn't showing up your favourite recipes, had the code in wrong and had to change it, needed to leave a space after a line. 
