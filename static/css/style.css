@@ -3,7 +3,7 @@ font-family: 'Shadows Into Light', cursive;
 font-family: 'Yanone Kaffeesatz', sans-serif; */
 
 
-body {
+body{
     background-color: #F9FAFC;
     font-family:'Lobster Two',sans-serif;
     font-weight: 500;
@@ -30,7 +30,7 @@ body {
     font-weight: 600;
 }
 
-.navbar-nav > li > a:hover { 
+.navbar-nav > li > a:hover{ 
     background-color:#DBEB4F;
     padding: 5px;
     border-radius: 10px;
@@ -93,7 +93,7 @@ footer {
     margin-top: 15px;
 }
 
-.display-6 {
+.display-6{
     font-size: 20px;
 }
 
@@ -120,7 +120,7 @@ footer {
 
 /* -- POST DETAILS PAGE--  */
 
-.recipe-card-head {
+.recipe-card-head{
     background-color: rgb(2, 176, 176);
 }
 
@@ -128,12 +128,12 @@ footer {
     height: 33vh;
 }
 
-.recipe-title {
+.recipe-title{
     margin-left: 5%;
     margin-top: 15px;
 }
 
-.recipe-subtitle {
+.recipe-subtitle{
     margin-left: 5%;
     margin-bottom: 0;
     color: #fff;
@@ -183,22 +183,22 @@ footer {
     background-color: rgb(2, 176, 176);
 }
 
-.login-img > img {
+.login-img > img{
     height: 70vh;
     width: 100%;
 }
 
-#id_remember {
+#id_remember{
     width: inherit;
 }
 
-.logout-img > img {
+.logout-img > img{
     height: 50vh;
     width: 100%;
 }
 
 
-.rec-card-position {
+.rec-card-position{
     margin: auto;
 }
 
@@ -240,12 +240,12 @@ footer {
         height: 450px;
     }
 
-    .login-img > img {
+    .login-img > img{
         height: 50vh;
         width: 100%;
     }
 
-    .rec-card-position {
+    .rec-card-position{
         margin: auto;
     }
 
