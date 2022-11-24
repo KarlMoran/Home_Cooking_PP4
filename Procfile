@@ -1,1 +1,0 @@
-web: gunicorn home_cooking.wsgi
