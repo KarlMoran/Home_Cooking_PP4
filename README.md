@@ -13,7 +13,7 @@ Home cooked recipes at your finger tips :point_up:. Share with people, what fami
 The Home|Cooking page is a website where users can view recipes, like, Comment and and also share their own recipes with other users. This page is intended for any one who enjoys cooking and is looking for some inspiration. 
 
 
-Live link found here <a href="https://home-cooking1.herokuapp.com/" alt="Live Link"> Home|Cooking </a>
+Live link found here <a href="https://home-cooking.onrender.com//" alt="Live Link"> Home|Cooking </a>
 
 #
 
